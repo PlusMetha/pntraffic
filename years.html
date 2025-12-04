@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>Years of Experience</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; padding: 30px; }
+    .badge {
+      display: inline-flex;
+      gap: 10px;
+      align-items: baseline;
+      background:#f0f8ff;
+      padding:12px 18px;
+      border-radius:8px;
+      border:1px solid #d0e6ff;
+    }
+    .years {
+      font-size: 48px;
+      font-weight:700;
+      color:#0c63d6;
+    }
+    .label {
+      font-size: 16px;
+      color:#333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">
+    <div class="years" id="years">—</div>
+    <div class="label">
+      Years of Experience<br>
+      <small>since พ.ศ. <span id="startYear">2555</span></small>
+    </div>
+  </div>
+
+  <script>
+    // เริ่มจากปี พ.ศ. ที่ต้องการ (แก้ได้ถ้าต้องการ)
+    const startBuddhistYear = 2555;
+
+    // คำนวณปีปัจจุบันแบบ พ.ศ.
+    const now = new Date();
+    const currentBuddhistYear = now.getFullYear() + 543;
+
+    // จำนวนปีแห่งประสบการณ์ = ปีปัจจุบัน (พ.ศ.) - ปีเริ่มต้น (พ.ศ.)
+    const years = currentBuddhistYear - startBuddhistYear;
+
+    // แสดงผล (ในกรณีที่ต้องการล็อคไม่ให้ติดลบ)
+    document.getElementById('years').textContent = (years > 0 ? years : 0);
+    document.getElementById('startYear').textContent = startBuddhistYear;
+  </script>
+
+</body>
+</html>
