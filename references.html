@@ -1,0 +1,534 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>P&N Traffic Service</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <section class="header_area">
+        <div class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.png" alt="Logo" style="scale: 200%;" >
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="index.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="index.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="index.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="References.html">References</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+
+        <div id="home" class="header_slider">
+            <div class="single_slider bg_cover d-flex align-items-center"
+                style="background-image: url(assets/images/slider-1.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10">
+                            <div class="slider_content">
+                                <h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">P&N
+                                    Traffic Service Co.,Ltd</h2>
+                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                                    ผู้เชี่ยวชาญงานออกแบบ งานติดตั้ง งานซ่อมบำรุงและปรับปรุงระบบไฟสัญญาณจราจร</p>
+                                <a href="#gallery" rel="nofollow" class="main-btn wow fadeInLeftBig page-scroll"
+                                    data-wow-duration="1.3s" data-wow-delay="0.8s">ผลงานของเรา</a>
+                            </div> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+        </div> <!-- header slider -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== FEATURES PART START ======-->
+
+<!--====== GALLERY FULLPAGE START ======-->
+<!--====== GALLERY FULLPAGE START ======-->
+<style>
+    .gallery-grid img {
+        width: 100%;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .gallery-grid img:hover {
+        transform: scale(1.03);
+    }
+
+    /* ---- POST VIEW ---- */
+    #postViewArea {
+        display: none;
+        margin-top: 50px;
+        position: relative;
+        padding: 20px;
+        border-radius: 12px;
+        background: #f8f8f8;
+    }
+
+    /* ปุ่มปิด */
+    #closePost {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 26px;
+        cursor: pointer;
+        padding: 6px 12px;
+        border-radius: 6px;
+        background: #000;
+        color: #fff;
+        opacity: 0.7;
+        transition: 0.2s;
+    }
+    #closePost:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    .post-view img {
+        width: 100%;
+        max-width: 400px; /* ← คุณสามารถแก้ไขตรงนี้ให้เล็กลงหรือใหญ่ขึ้น */
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .post-title {
+        font-size: 26px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    .post-desc {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #555;
+        line-height: 1.6;
+        max-width: 900px;
+    }
+
+    /* ---- THUMB STRIP ---- */
+    .thumb-strip {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-top: 15px;
+    }
+    .thumb-strip img {
+        width: 120px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: 0.2s;
+    }
+    .thumb-strip img.active,
+    .thumb-strip img:hover {
+        opacity: 1;
+        transform: scale(1.05);
+        border: 2px solid #ffce2e;
+    }
+    .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 5px 12px;
+    background: rgba(0,0,0,0.0);
+    color: rgb(70, 70, 70);
+    border-radius: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+.arrow:hover {
+    background: rgba(0,0,0,0.0);
+}
+
+.post-view { position: relative; }
+
+</style>
+
+
+<section class="pt-120 pb-120" id="gallery">
+    <div class="container">
+        <div class="section_title text-center pb-40">
+            <h4 class="title">ภาพผลงานของเรา</h4>
+        </div>
+
+        <!-- GRID LIST -->
+        <div class="row gallery-grid">
+            <div class="col-lg-4 col-md-6 mt-30">
+                <img src="assets/reference/customer/A001/877713_0.jpg" onclick="openPost(1)" alt="post1">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-30">
+                <img src="assets/reference/customer/A002/877724_0.jpg" onclick="openPost(2)" alt="post2">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-30">
+                <img src="assets/reference/customer/A003/877738_0.jpg" onclick="openPost(3)" alt="post3">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-30">
+                <img src="assets/reference/customer/A004/877758_0.jpg" onclick="openPost(4)" alt="post4">
+            </div>
+        </div>
+
+        <!-- FULL POST VIEW -->
+        <div id="postViewArea">
+            <div id="closePost" onclick="closePost()">×</div>
+
+<div class="post-view">
+    <span class="arrow left" onclick="prevImage()">&#10094;</span>
+    <img id="mainPostImage" src="">
+    <span class="arrow right" onclick="nextImage()">&#10095;</span>
+</div>
+
+            <h3 class="post-title" id="postTitle"></h3>
+            <p class="post-desc" id="postDesc"></p>
+
+            <div class="thumb-strip mt-20" id="thumbStrip"></div>
+        </div>
+    </div>
+</section>
+
+   <section class="footer_area bg_cover" style="background-image: url(assets/images/footer_bg.jpg)">
+        <div class="container">
+            <div class="footer_widget pt-80 pb-130">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer_about mt-50">
+                            <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+<p>26/132 หมู่บ้านเอกกวินทาวน์โฮม ถนนเลียบคลองสอง แขวงบางชัน เขตคลองสามวา กรุงเทพมหานคร 10510</p>
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Compnay</h4>
+                                <ul class="link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Support</h4>
+                                <ul class="link">
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Leal</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Socials</h4>
+                                <ul class="link">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instageam</a></li>
+                                    <li><a href="#">Linkdin</a></li>
+                                    <li><a href="#">Pintarest</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer_copyright text-center">
+               <!-- <p>Designed and Developed by <a href="#" rel="nofollo">P&N Traffic Service Co.,Ltd</a></p> -->
+                <p>Designed and Developed by P&N Traffic Service Co.,Ltd </p>
+            </div>
+        </div> <!-- container -->
+    </section>
+
+<script>
+    const posts = {
+        1: {
+            title: "งานติดตั้งระบบไฟส่องสว่าง",
+            desc: "ผลงานติดตั้งระบบไฟถนนแบบโซล่าเซลล์ พร้อมอุปกรณ์ควบคุมและระบบเซฟตี้ รองรับการใช้งานในระยะยาวและประหยัดพลังงานสูงสุด",
+            images: [
+                "assets/reference/customer/A001/877713_0.jpg",
+                "assets/reference/customer/A001/877714_0.jpg",
+                "assets/reference/customer/A001/877711_0.jpg",
+                "assets/reference/customer/A001/877703_0.jpg",
+                "assets/reference/customer/A001/877704_0.jpg",
+                "assets/reference/customer/A001/877705_0.jpg",
+                "assets/reference/customer/A001/877706_0.jpg",
+                "assets/reference/customer/A001/877707_0.jpg",
+                "assets/reference/customer/A001/877708_0.jpg",
+                "assets/reference/customer/A001/877709_0.jpg",
+                "assets/reference/customer/A001/877710_0.jpg",
+                "assets/reference/customer/A001/877712_0.jpg"
+            ]
+        },
+        2: {
+            title: "งานซ่อมบำรุงสัญญาณไฟจราจร",
+            desc: "ทีมงานทำการตรวจสอบ ปรับปรุง และเปลี่ยนอุปกรณ์ที่เสื่อมสภาพ เพื่อให้สัญญาณไฟจราจรทำงานเสถียรและปลอดภัย",
+            images: [
+                "assets/reference/customer/A002/877724_0.jpg",
+                "assets/reference/customer/A002/877725_0.jpg",
+                "assets/reference/customer/A002/877726_0.jpg",
+                "assets/reference/customer/A002/877719_0.jpg",
+                "assets/reference/customer/A002/877720_0.jpg",
+                "assets/reference/customer/A002/877721_0.jpg",
+                "assets/reference/customer/A002/877722_0.jpg",
+                "assets/reference/customer/A002/877723_0.jpg"
+            ]
+        },
+        3: {
+            title: "งานทาสีตีเส้นและป้ายจราจร",
+            desc: "ผลงานตีเส้นจราจร ป้ายสัญลักษณ์ และป้ายเตือนต่าง ๆ ด้วยมาตรฐานกรมทางหลวง เพื่อความปลอดภัยบนท้องถนน",
+            images: [
+                "assets/reference/customer/A003/877738_0.jpg",
+                "assets/reference/customer/A003/877739_0.jpg",
+                "assets/reference/customer/A003/877740_0.jpg",
+                "assets/reference/customer/A003/877741_0.jpg",
+                "assets/reference/customer/A003/877742_0.jpg",
+                "assets/reference/customer/A003/877743_0.jpg",
+                "assets/reference/customer/A003/877730_0.jpg",
+                "assets/reference/customer/A003/877731_0.jpg",
+                "assets/reference/customer/A003/877732_0.jpg"
+            ]
+        },
+                4: {
+            title: "งานติดตั้งไฟฟ้าส่องสว่าง",
+            desc: "งานติดตั้งไฟฟ้าส่องสว่างภายในเขตเทศบาลตำบลโพธิ์งาม จ.ปราจีนบุรี",
+            images: [
+                "assets/reference/customer/A004/877758_0.jpg",
+                "assets/reference/customer/A004/877759_0.jpg",
+                "assets/reference/customer/A004/877760_0.jpg",
+                "assets/reference/customer/A004/877756_0.jpg",
+                "assets/reference/customer/A004/877757_0.jpg",
+                "assets/reference/customer/A004/877755_0.jpg",
+                "assets/reference/customer/A004/877754.jpg",
+                "assets/reference/customer/A004/877753.jpg",
+                "assets/reference/customer/A004/877752.jpg"
+            ]
+        }
+    };
+
+    function openPost(postId) {
+        const view = document.getElementById("postViewArea");
+        const mainImg = document.getElementById("mainPostImage");
+        const thumbs = document.getElementById("thumbStrip");
+        const title = document.getElementById("postTitle");
+        const desc = document.getElementById("postDesc");
+
+        const imgs = posts[postId].images;
+
+        // ข้อมูลโพสต์
+        title.innerText = posts[postId].title;
+        desc.innerText = posts[postId].desc;
+
+        // แสดงภาพหลัก
+        mainImg.src = imgs[0];
+
+        // โหลดแถบรูปด้านล่าง
+        thumbs.innerHTML = "";
+        imgs.forEach((src, index) => {
+            const t = document.createElement("img");
+            t.src = src;
+            if (index === 0) t.classList.add("active");
+            t.onclick = () => {
+                mainImg.src = src;
+                document.querySelectorAll(".thumb-strip img").forEach(el => el.classList.remove("active"));
+                t.classList.add("active");
+            };
+            thumbs.appendChild(t);
+        });
+
+        view.style.display = "block";
+
+        view.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function closePost() {
+        document.getElementById("postViewArea").style.display = "none";
+    }
+
+    let currentPost = null;
+let currentIndex = 0;
+let autoSlide = null;
+
+function openPost(postId) {
+    currentPost = posts[postId].images;
+    currentIndex = 0;
+
+    const view = document.getElementById("postViewArea");
+    const mainImg = document.getElementById("mainPostImage");
+    const thumbs = document.getElementById("thumbStrip");
+    const title = document.getElementById("postTitle");
+    const desc = document.getElementById("postDesc");
+
+    title.innerText = posts[postId].title;
+    desc.innerText = posts[postId].desc;
+
+    mainImg.src = currentPost[currentIndex];
+
+    thumbs.innerHTML = "";
+    currentPost.forEach((src, index) => {
+        const t = document.createElement("img");
+        t.src = src;
+        if (index === 0) t.classList.add("active");
+        t.onclick = () => showImage(index);
+        thumbs.appendChild(t);
+    });
+
+    view.style.display = "block";
+    view.scrollIntoView({ behavior: "smooth" });
+
+    startAutoSlide();
+}
+
+function showImage(index) {
+    currentIndex = index;
+    document.getElementById("mainPostImage").src = currentPost[currentIndex];
+
+    document.querySelectorAll(".thumb-strip img").forEach(el => el.classList.remove("active"));
+    document.querySelectorAll(".thumb-strip img")[currentIndex].classList.add("active");
+
+    resetAutoSlide();
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % currentPost.length;
+    showImage(currentIndex);
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + currentPost.length) % currentPost.length;
+    showImage(currentIndex);
+}
+
+function startAutoSlide() {
+    autoSlide = setInterval(() => {
+        nextImage();
+    }, 1000); // 1 วินาที
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlide);
+    startAutoSlide();
+}
+
+function closePost() {
+    document.getElementById("postViewArea").style.display = "none";
+    clearInterval(autoSlide);
+}
+
+</script>
+<!--====== GALLERY FULLPAGE END ======-->
+
+ 
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+ 
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
